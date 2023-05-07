@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>HN - 001</title>
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="../">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>HN - 001</h1>
+                <h2>YiyuanLi</h6>
+                <p>The name HN-001 is derived from the initials Human and Nature, the embodiment of the 
+                    relationship between man and nature.</p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe title="HN-001" src="https://vimeo.com/manage/videos/823010976/privacy" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>The device interacts by recognising the participant's gestures and the participant can 
+                    manipulate the physical device to feel the relationship between humans and nature.</p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <h4>The urban sprawl</h4>
+
+                <p>
+                    Urban sprawl is defined as "the spreading of urban developments (such as houses 
+                    and shopping centers) on undeveloped land near a city." Urban sprawl has been 
+                    described as the unrestricted growth in many urban areas of housing, commercial 
+                    development, and roads over large expanses of land, with little concern for urban 
+                    planning.</p>
+                 
+                <p>The natural environment is greatly affected by urban sprawl. The expansion of cities 
+                    has led to the loss of natural habitats and increased pollution levels. When natural 
+                    spaces are replaced by pavement, roads, buildings or parking lots, it affects the 
+                    ability of animal and plant species to survive. The fragmentation of natural habitats 
+                    can lead to a reduction in biodiversity and the loss of valuable species. Urban sprawl 
+                    also affects water resources, soils, and air quality, transforming them to become 
+                    polluted due to increased human activities. According to Ho et al. (2007), 
+                    urbanization contributes to pollution emissions, loss of biodiversity and degradation 
+                    of environmental quality.
+                    The impacts of urban sprawl on the natural environment are wide-ranging. The 
+                    adoption of a "drive-everywhere" culture has led to increased vehicle emissions 
+                    which exacerbates air pollution, harming the natural environment (Ewing et al., 2016). 
+                    The nonpoint source pollution caused by increased impermeable surfaces in urban 
+                    centers contributes to the loss of natural water quality, leading to a reduction in the 
+                    availability of aquatic habitat (Hough, 2005). Similarly, the land-use changes required 
+                    for urbanization result in a loss of green space which negatively impacts outdoor 
+                    recreation areas, public health, and the mental well-being of citizens (Van den Berg 
+                    et al., 2007). <p>
+
+                 <img src="../assets/images/research.png"/>
+                 <section class="center-text">
+                 <h7>25 Years of Growth in Las Vegas - Photo: Jesse Allen and Robert Simmon </h7>
+                 <h7>https://landsat.visibleearth.nasa.gov/view.php?id=37228</h7>
+                 </section>
+                <h4> Reflections on urban sprawl</h4>
+
+
+                <p> With today's trend of urban sprawl, it made me reflect on why cities need sprawl 
+                    rather than rational development, why sprawl is increasing and whether nature is like 
+                    a lamb to the slaughter in front of mankind.In the past, when technology was not yet 
+                    developed, humans lived in harmony with nature, but when technology accelerated 
+                    and humans had the power forged by technology, everything seemed to change and 
+                    we were free to fantasise about transforming the natural environment and making it a 
+                    sacrifice for our personal desires.
+                    This is the embodiment of the power relationship between humans and nature. Often 
+                    when those who wield power want to control the dominated, it only takes the simplest 
+                    of gestures for the wielder to make the dominated a victim of their own desires, and 
+                    thus power in the hands of humans is the fundamental cause of urban sprawl. </p>
+                
+              
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+
+                <h4>Project idea</h4>
+                <p> In this project I have conceived an interactive device that brings together technology, humans 
+                    and power - a robotic arm - and plan to install it on a miniature landscape.
+                    In order to express my thoughts on the relationship with power, participants will experience 
+                    the act of using power for "urban sprawl" as a way of feeling the relationship between 
+                    humans and nature. Amongst other things, they will use the simplest of gestures: up, down, 
+                    left and right as the main interaction of the piece. <p> 
+                
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/sketch1.jpeg"/>
+
+                <section class="center-text">
+                    <h7>Sketch </h7>
+                    </section>
+
+
+                <h4>Programming Code</h4>
+                <p> At first, I intended to use only ml5.js hand skeleton tracking to get information about the 
+                    user's hands. I read and researched a lot about ml5.js gesture recognition and connecting to 
+                    Arduino, and initially I solved most of the gesture recognition problems through programming, 
+                    but in the process of testing the code after trying to use it in conjunction with servo motors, I 
+                    found that ml5.js could recognise left heel right gestures well, but not up and down gestures 
+                    well, even with the use of finger skeleton tracking So I had to try and find another way that 
+                    would work.
+                    Eventually I found a gesture sensor called paj7620. After using this gesture recognition 
+                    sensor, the gesture issues I was having with ml5.js and some glitches and sensitivity issues 
+                    were resolved, allowing me to test and carry out the project more effectively, so I decided to 
+                    use a combination of paj7620 and ml5.js gesture recognition to complete the project. <p> 
+
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/test.jpeg"/>
+
+
+                <h4>Physical installation</h4>
+                <p> This physical installation consists of two parts, a miniature scene that simulates a natural 
+                    landscape and a robotic arm made up of servo motors. <p> 
+                
+                <h5>The robot arm</h5>
+                <p>  I first drew its structure using software, then used a 3D printer to punch out 
+                    the parts and finally completed the assembly. <p> 
+
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="../assets/images/arm1.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/arm2.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/arm3.jpeg"/>
+                    </div>
+                </div>
+
+                <h5>Miniature scene</h5>
+                <p>  I used a number of composite materials such as newspaper, lime dust, 
+                    stones and fake grass. <p> 
+
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-fourth">
+                    <div class="flex-item">
+                        <img src="../assets/images/processing1.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/processing2.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/processing3.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/processing4.jpeg"/>
+                    </div>
+                </div>
+
+                
+            </section>
+
+
+            <section>
+                <h3>Reflection and Future Development</h3>
+                <p>In the future, I plan to make this project bigger, include more miniature landscapes as well as 
+                    robotic arms in it, and continue to experiment with the gesture recognition code using ml5.js, 
+                    aiming to include more interesting gesture recognition in this project than simply going up 
+                    and down.</p>
+
+                     <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/sketch2.jpeg"/>
+
+                <section class="center-text">
+                    <h7>Sketch</h7>
+                    </section>
+
+            </section>
+
+            <section>
+                 <h3>Self evaluation</h3>
+                 <p>I encountered many difficulties while working on the project, for example, on the code side, 
+                    writing the code for the gestures in the ml5.js gesture recognition library, which turned out 
+                    not to be feasible during testing, and on the physical programming side, testing the data of 
+                    each servo motor to make it move as smoothly as possible. These were all great challenges 
+                    and allowed me to gain many programming skills in the process.
+                    The finished project looks a little more monotonous and less flashy in terms of human computer interaction, but I think that's exactly what I was trying to say: "The powerhouse 
+                    needs only the simplest of actions to make manipulated dedicated to it”.
+                    Making the miniature landscape was also a big challenge, and although this creation was 
+                    more complete, I still overlooked some details, such as matching the physical installation for 
+                    hidden wiring. But in any case, I gained a lot from this project, especially the knowledge 
+                    about the code that combines the gesture recognition function of ml5.js with the physical 
+                    device, and I believe I will use both technologies more often in the future.</p>
+            </section>
+
+            <section>
+                <h3>References</h3>
+                <ul>
+                <h4> <li>Technical Reference example. Include link where possible.</li> </h4> 
+                <p>1.Paj7620 references: https://surtrtech.com/2019/07/16/how-to-add-hand-gestures-to-your-arduino-projects/</p>  
+                <p> 2. ml5.js Handpose references: https://learn.ml5js.org/#/reference/handpose</p>  
+                <p> 3.ml5.js Serial references: https://makeabilitylab.github.io/physcomp/</p>  
+                    communication/ml5js-serial.html  
+                
+                 <h4> <li>Conceptual Reference example. Include link where possible.</li></h4>  
+                <p>1.Urban Sprawl：https://www.everythingconnects.org/urban-sprawl.html</p>
+                <p>2.The curse of urban sprawl: how cities grow, and why this has to change：https://www.theguardian.com/cities/2016/jul/12/urban-sprawl-how-cities-grow-change-sustainability-urban-age</p>
+                <p>3.Boarnet, M. G. and Greenwald, M. J. (2020). Handbook on urban sustainability. Edward Elgar Publishing.</p>
+                <p>4.Ewing, R., Pendall, R., and Chen, D. (2016). Measuring sprawl and its impact. Urban Studies, 45(1), 1–16.</p>
+                <p>5.Hough, M. (2005). Cities and natural process. Routledge.</p>
+                <p>6.Ho, C. S., Zhang, X., and Xu, G. (2007). Urbanization and environmental quality. Journal of Environment Quality, 36(4), 1397–1405.</p>
+                <p>7.Nowak, D. J. and Crane, D. E. (2002). Carbon storage and sequestration by urban trees in the USA. Environmental Pollution, 116(3), 381–389.</p>
+                <p>8.Van den Berg, A. E., Koole, S. L., and Van de Meent, H. (2007). Urban forestry and green spaces. Springer.</p>
+                </ul>
+            </section>
+
+            
+
+        </main>
+
+        <footer>
+            <!-- normally information like contact details etc  -->
+            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+            
+         </footer>
+    </body>
+</html>
