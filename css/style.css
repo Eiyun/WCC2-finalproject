@@ -153,17 +153,12 @@ img{
    padding:5px 10px;
 }
 
-img {
+.img {
     width:100%;
     /* max-width:500px; */
     height: auto;
 }
 
-imgs {
-    width:40%;
-    /* max-width:500px; */
-    height: auto;
-}
 
 /* Media Queries for responsive design */
 
