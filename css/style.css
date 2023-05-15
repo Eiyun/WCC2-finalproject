@@ -1,4 +1,4 @@
-/*This is a comment in CSS*/
+
 
 body{
     font-family: Verdana, sans-serif;
@@ -93,8 +93,6 @@ img{
 }
 
 
-/* Flex layouts are one of the easier ways to style responsive layouts that work on all devices */
-/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox */
 
 .flex-container{
     display: flex; /* all children will now be flex items */
@@ -155,6 +153,17 @@ img{
    padding:5px 10px;
 }
 
+img {
+    width:100%;
+    /* max-width:500px; */
+    height: auto;
+}
+
+imgs {
+    width:40%;
+    /* max-width:500px; */
+    height: auto;
+}
 
 /* Media Queries for responsive design */
 
